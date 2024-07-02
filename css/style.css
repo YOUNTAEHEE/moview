@@ -1,0 +1,30 @@
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  margin-top: 10vh;
+}
+.container .top-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .top-wrap .search-wrap input {
+  border: 1px solid #777;
+  width: 15vw;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+}
+.container .top-wrap .search-wrap button {
+  width: 70px;
+  height: 35px;
+  background-color: white;
+  border: 1px solid #777;
+  border-radius: 5px;
+  color: #777;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
