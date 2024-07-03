@@ -1,29 +1,119 @@
-.container {
-  width: 1024px;
-  margin: 0 auto;
-  margin-top: 10vh;
-  .top-wrap {
+@import "./reset.scss";
+header {
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .header-con-wrap {
+    margin: 0 auto;
+    width: 1024px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .logo-wrap {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      h1 {
+        color: #ff066e;
+        font-size: 2.3rem;
+      }
+      p {
+        color: white;
+        font-size: 0.8rem;
+        margin-left: 10px;
+        padding-bottom: 8px;
+      }
+    }
+
     .search-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       input {
-        border: 1px solid #777;
-        width: 15vw;
-        height: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        width: 20vw;
+        height: 35px;
         border-radius: 5px;
         outline: none;
         padding: 5px;
+        background-color: black;
+        color: white;
       }
       button {
-        width: 70px;
-        height: 35px;
-        background-color: white;
-        border: 1px solid #777;
-        border-radius: 5px;
-        color: #777;
-        margin-left: 5px;
         cursor: pointer;
+        margin-left: 5px;
+        svg {
+          color: rgba(255, 255, 255, 0.8);
+        }
+      }
+    }
+    .review-add-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button {
+        font-size: 0.9rem;
+        border-radius: 5px;
+        color: #ff066e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        svg {
+          color: #ff066e;
+        }
+      }
+    }
+  }
+}
+.container {
+  width: 1024px;
+  margin: 0 auto;
+
+  section {
+    margin-top: 10vh;
+    .movie-card {
+      width: 50%;
+      padding: 20px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 30px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      margin-bottom: 20px;
+      .movie-pic {
+        width: 140px;
+        height: 200px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .movie-info {
+        padding: 10px;
+        .star {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          svg {
+            width: 25px;
+            height: 25px;
+            stroke-width: 1;
+            cursor: pointer;
+          }
+        }
+        .username {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+        .comment {
+          margin-bottom: 10px;
+        }
       }
     }
   }

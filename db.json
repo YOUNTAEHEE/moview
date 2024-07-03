@@ -1,0 +1,11 @@
+{
+  "review": [
+    {
+      "username": "you",
+      "star": 3,
+      "average": 4,
+      "oneLine": "완벽",
+      "comment": "좋아요"
+    }
+  ]
+}
