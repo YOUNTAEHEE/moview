@@ -96,15 +96,25 @@ header {
       }
       .movie-info {
         padding: 10px;
-        .star {
+        .star-average-num {
           display: flex;
           justify-content: center;
           align-items: center;
-          svg {
-            width: 25px;
-            height: 25px;
-            stroke-width: 1;
-            cursor: pointer;
+          flex-wrap: wrap;
+          .star {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg {
+              width: 25px;
+              height: 25px;
+              stroke-width: 1;
+              cursor: pointer;
+            }
+          }
+          .average {
+            color: #ff066e;
+            margin-left: 10px;
           }
         }
         .username {

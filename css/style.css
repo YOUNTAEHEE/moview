@@ -120,16 +120,26 @@ header .header-con-wrap .review-add-wrap button svg {
 .container section .movie-card .movie-info {
   padding: 10px;
 }
-.container section .movie-card .movie-info .star {
+.container section .movie-card .movie-info .star-average-num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container section .movie-card .movie-info .star-average-num .star {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container section .movie-card .movie-info .star svg {
+.container section .movie-card .movie-info .star-average-num .star svg {
   width: 25px;
   height: 25px;
   stroke-width: 1;
   cursor: pointer;
+}
+.container section .movie-card .movie-info .star-average-num .average {
+  color: #ff066e;
+  margin-left: 10px;
 }
 .container section .movie-card .movie-info .username {
   margin-top: 10px;
